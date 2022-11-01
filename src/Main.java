@@ -13,7 +13,12 @@ public class Main {
                 1.7,
                 "желтый",
                 2015,
-                "Россия", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
+                "Россия",
+                "МКПП",
+                "седан",
+                "х000хх000",
+                5,
+                true, new Car.Key(), new Car.Insurance());
         lada.setRegNumber("М640ЕС159");
         System.out.println(lada.isCorrectRegNumber());
 
@@ -22,7 +27,12 @@ public class Main {
                 3.0,
                 null,
                 2020,
-                "Германия", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
+                "Германия",
+                "МКПП",
+                "седан",
+                "х000хх000",
+                5,
+                true, new Car.Key(), new Car.Insurance());
         audi.setGears("Автомат");
         audi.setKey(new Car.Key(true, true));
 
@@ -33,7 +43,12 @@ public class Main {
                 3.0,
                 "черный",
                 0,
-                "Германия", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
+                "Германия",
+                "МКПП",
+                "седан",
+                "х000хх000",
+                5,
+                true, new Car.Key(), new Car.Insurance());
         bmv.setSummerTyres(false);
         bmv.setInsurance(new Car.Insurance(LocalDate.now(), 30_000, "748494726"));
         bmv.getInsurance().checkExpireDate();
@@ -46,7 +61,12 @@ public class Main {
                 2.4,
                 "красный",
                 2018,
-                "Южная Корея", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
+                "Южная Корея",
+                "МКПП",
+                "седан",
+                "х000хх000",
+                5,
+                true, new Car.Key(), new Car.Insurance());
 
 
         Car hyundai = new Car("Hyundai",
@@ -54,7 +74,12 @@ public class Main {
                 0,
                 "оранжевый",
                 2016,
-                "Южная Корея", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
+                "Южная Корея",
+                "МКПП",
+                "седан",
+                "х000хх000",
+                5,
+                true, new Car.Key(), new Car.Insurance());
 
         printInfo(lada);
         lada.refill();
