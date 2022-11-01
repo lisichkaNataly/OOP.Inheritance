@@ -2,19 +2,13 @@ package transport;
 
 import java.awt.*;
 
-public class Transport {
+public abstract class Transport {
     private String brand;
     private String model;
     private final int productionYear;
-    private String productionCountry;
+    private final String productionCountry;
     private String color;
     private int maximumSpeed;
-
-    public Transport(String brand, String model, int productionYear) {
-        this.brand = brand;
-        this.model = model;
-        this.productionYear = productionYear;
-    }
 
     public Transport(String brand, String model, int productionYear, String productionCountry, String color) {
         this.brand = brand;
@@ -83,4 +77,7 @@ public class Transport {
             System.out.println("Неверное значение");
         this.maximumSpeed = maximumSpeed;
     }
+
+    public abstract void refill();
+
 }

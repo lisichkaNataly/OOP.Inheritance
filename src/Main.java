@@ -15,6 +15,7 @@ public class Main {
                 2015,
                 "Россия", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
         lada.setRegNumber("М640ЕС159");
+        lada.refill();
         System.out.println(lada.isCorrectRegNumber());
 
         Car audi = new Car("Audi",
@@ -27,6 +28,7 @@ public class Main {
         audi.setKey(new Car.Key(true, true));
 
 
+
         Car bmv = new Car("BMV",
                 "Z8",
                 3.0,
@@ -37,6 +39,7 @@ public class Main {
         bmv.setInsurance(new Car.Insurance(LocalDate.now(), 30_000, "748494726"));
         bmv.getInsurance().checkExpireDate();
         bmv.getInsurance().checkNumber();
+
 
 
         Car kia = new Car("KIA",
@@ -55,32 +58,66 @@ public class Main {
                 "Южная Корея", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
 
         printInfo(lada);
+        lada.refill();
         printInfo(audi);
+        audi.refill();
         printInfo(bmv);
+        bmv.refill();
         printInfo(kia);
+        kia.refill();
         printInfo(hyundai);
+        hyundai.refill();
 
 
-        Train lastochka = new Train("Ласточка", "B-901",
-                2011, "Россия", 301,
-                "Белорусский вокзал", "Минск-Пассажирский", 3500, 11);
-        Train leningrad = new Train("Ленинград", "D-125",
-                2019, "Россия", 270,
-                "Ленинградский вокзал", "Ленинград-пассажирский", 1700, 8);
+        Train lastochka = new Train("Ласточка",
+                "B-901",
+                2011,
+                "Россия",
+                301,
+                "Белорусский вокзал",
+                "Минск-Пассажирский",
+                3500,
+                11);
+        Train leningrad = new Train("Ленинград",
+                "D-125",
+                2019,
+                "Россия",
+                270,
+                "Ленинградский вокзал",
+                "Ленинград-пассажирский",
+                1700,
+                8);
 
         printInfo(lastochka);
+        lastochka.refill();
         printInfo(leningrad);
+        leningrad.refill();
 
-        Bus maz = new Bus("Маз", "232",
-                2014, "Россия", "белый", 100);
-        Bus gaz = new Bus("Газ", "Вектор Next",
-                2016, "Россия", "голубой", 200);
-        Bus man = new Bus("MAN", "Lion’s Coach",
-                2020, "Германия", "зеленый", 360);
+        Bus maz = new Bus("Маз",
+                "232",
+                2014,
+                "Россия",
+                "белый",
+                100);
+        Bus gaz = new Bus("Газ",
+                "Вектор Next",
+                2016,
+                "Россия",
+                "голубой",
+                200);
+        Bus man = new Bus("MAN",
+                "Lion’s Coach",
+                2020,
+                "Германия",
+                "зеленый",
+                360);
 
         printInfo(maz);
+        maz.refill();
         printInfo(gaz);
+        gaz.refill();
         printInfo(man);
+        man.refill();
     }
 
     private static void printInfo(Car car) {
