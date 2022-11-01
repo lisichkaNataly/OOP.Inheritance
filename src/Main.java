@@ -15,7 +15,6 @@ public class Main {
                 2015,
                 "Россия", "МКПП", "седан", "х000хх000", 5, true, new Car.Key(), new Car.Insurance());
         lada.setRegNumber("М640ЕС159");
-        lada.refill();
         System.out.println(lada.isCorrectRegNumber());
 
         Car audi = new Car("Audi",
