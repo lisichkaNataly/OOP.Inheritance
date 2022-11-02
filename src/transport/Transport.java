@@ -10,6 +10,11 @@ public abstract class Transport {
     private String color;
     private int maximumSpeed;
 
+    public Transport(int productionYear, String productionCountry) {
+        this.productionYear = productionYear;
+        this.productionCountry = productionCountry;
+    }
+
     public Transport(String brand, String model, int productionYear, String productionCountry, String color) {
         this.brand = brand;
         this.model = model;
