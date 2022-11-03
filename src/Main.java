@@ -8,6 +8,8 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
+
+        // автомобили
         Car lada = new Car("Lada",
                 "Granta",
                 1.7,
@@ -81,18 +83,19 @@ public class Main {
                 5,
                 true, new Car.Key(), new Car.Insurance());
 
-        printInfo(lada);
+
+        lada.printCar();
         lada.refill();
-        printInfo(audi);
+        audi.printCar();
         audi.refill();
-        printInfo(bmv);
+        bmv.printCar();
         bmv.refill();
-        printInfo(kia);
+        kia.printCar();
         kia.refill();
-        printInfo(hyundai);
+        hyundai.printCar();
         hyundai.refill();
 
-
+        //поезда
         Train lastochka = new Train("Ласточка",
                 "B-901",
                 2011,
@@ -111,11 +114,12 @@ public class Main {
                 "Ленинград-пассажирский",
                 1700,
                 8);
-
-        printInfo(lastochka);
+        lastochka.printTrain();
         lastochka.refill();
-        printInfo(leningrad);
+        leningrad.printTrain();
         leningrad.refill();
+
+        //автобусы
 
         Bus maz = new Bus("Маз",
                 "232",
@@ -136,52 +140,12 @@ public class Main {
                 "зеленый",
                 360);
 
-        printInfo(maz);
+        maz.printBus();
         maz.refill();
-        printInfo(gaz);
+        gaz.printBus();
         gaz.refill();
-        printInfo(man);
+        man.printBus();
         man.refill();
-    }
-
-    private static void printInfo(Car car) {
-        System.out.println("Марка автомобиля " + car.getBrand() +
-                ", модель " + car.getModel() +
-                ", объем двигателя " + car.getEngineVolume() +
-                ", цвет кузова: " + car.getColor() +
-                ", год выпуска: " + car.getProductionYear() +
-                ", страна производства: " + car.getProductionCountry() +
-                ", коробка передач: " + car.getGears() +
-                ", тип кузова: " + car.getTypeOfBody() +
-                ", регистрационный номер: " + car.getRegNumber() +
-                ", количество мест: " + car.getSeatCount() +
-                ", " + (car.isSummerTyres() ? "летняя" : "зимняя") + " резина" +
-                ", " + (car.getKey().isWithoutKeyAccess() ? "безключевой доступ" : "ключевой доступ") +
-                ", " + (car.getKey().isRemoteRunEngine() ? "удаленный запуск" : "обычный запуск") +
-                ", номер страховки: " + car.getInsurance().getNumber() +
-                ", стоимость страховки: " + car.getInsurance().getCost() +
-                ", срок действия страховки: " + car.getInsurance().getExpireDate());
-
-    }
-    private static void printInfo(Train train) {
-        System.out.println("Поезд: " + train.getBrand()+
-                ", страна производства: " + train.getProductionCountry() +
-                ", модель: " + train.getModel() +
-                ", год выпуска " + train.getProductionYear() +
-                ", скорость передвижения " + train.getMaximumSpeed() +
-                ", отходит от станции " + train.getNameDepartureStation() +
-                ", и прибывает на станцию " + train.getFinalStop() +
-                ", цена поездки " + train.getPriceTrip() + " рублей" +
-                ", у поезда " + train.getNumberWagons() + " вагонов");
-    }
-
-    private static void printInfo(Bus bus) {
-        System.out.println("Автобус: " + bus.getBrand()+
-                ", модель: " + bus.getModel() +
-                ", год выпуска: " + bus.getProductionYear() +
-                ", страна производства: " + bus.getProductionCountry() +
-                ", скорость передвижения: " + bus.getMaximumSpeed() + " км/ч" +
-                ", цвет " + bus.getColor());
     }
 
 }

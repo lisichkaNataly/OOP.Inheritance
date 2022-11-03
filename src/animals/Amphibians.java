@@ -18,16 +18,16 @@ public class Amphibians extends Animals{
     }
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("Я питаюсь мелкими животными, в основном насекомыми и беспозвоночными");
     }
 
     @Override
-    protected void go() {
+    public void go() {
         System.out.println("Я плаваю и хожу");
     }
 
-    protected void hunting() {
+    public void hunting() {
         System.out.println("Я - земноводное, и я охочусь");
     }
 

@@ -16,22 +16,22 @@ public class Predators extends Mammals {
         return typeOfFood;
     }
 
-    protected void hunting() {
+    public void hunting() {
         System.out.println("Я хищник и я охочусь");
     }
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("Я ем мясо");
     }
 
     @Override
-    protected void go() {
+    public void go() {
         System.out.println("Я хожу, где хочу");
     }
 
     @Override
-    protected void walk() {
+    public void walk() {
         super.walk();
     }
 

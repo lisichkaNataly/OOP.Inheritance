@@ -83,6 +83,7 @@ public abstract class Transport {
         this.maximumSpeed = maximumSpeed;
     }
 
-    public abstract void refill();
 
+    public abstract void refill();
 }
+

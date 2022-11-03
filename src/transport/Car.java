@@ -141,6 +141,23 @@ public class Car extends Transport{
     public void setInsurance(Insurance insurance) {
         this.insurance = insurance;
     }
+    public void printCar() {
+        System.out.println("Марка автомобиля " + getBrand() +
+                ", модель " + getModel() +
+                ", объем двигателя " + getEngineVolume() +
+                ", цвет кузова: " + getColor() +
+                ", год выпуска: " + getProductionYear() +
+                ", страна производства: " + getProductionCountry() +
+                ", коробка передач: " + getGears() +
+                ", тип кузова: " + getTypeOfBody() +
+                ", регистрационный номер: " + getRegNumber() +
+                ", количество мест: " + getSeatCount() +
+                ", " + (isSummerTyres() ? "летняя" : "зимняя") + " резина" +
+                ", " + (getKey().isWithoutKeyAccess() ? "безключевой доступ" : "ключевой доступ") +
+                ", " + (getKey().isRemoteRunEngine() ? "удаленный запуск" : "обычный запуск") +
+                ", номер страховки: " + getInsurance().getNumber() +
+                ", стоимость страховки: " + getInsurance().getCost() +
+                ", срок действия страховки: " + getInsurance().getExpireDate());}
 
     public boolean isCorrectRegNumber() {
         if (regNumber.length() != 9) {
@@ -182,6 +199,7 @@ public class Car extends Transport{
         public boolean isWithoutKeyAccess() {
             return withoutKeyAccess;
         }
+
     }
 
     public static class Insurance {

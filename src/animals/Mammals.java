@@ -26,16 +26,16 @@ public class Mammals extends  Animals{
     }
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("Я ем мясо и растения");
     }
 
     @Override
-    protected void go() {
+    public void go() {
         System.out.println("Я хожу");
     }
 
-    protected void walk() {
+    public void walk() {
         System.out.println("Я гуляю");
     }
 

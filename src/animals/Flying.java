@@ -18,16 +18,16 @@ public class Flying extends Birds{
 
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("Я ем");
     }
 
     @Override
-    protected void go() {
+    public void go() {
         System.out.println("Я гуляю, где мне хочется");
     }
 
-    protected void fly () {
+    public void fly () {
         System.out.println("Я летаю везде");
     }
 

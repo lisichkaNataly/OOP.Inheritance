@@ -35,13 +35,16 @@ public abstract class Animals {
         this.age = age;
     }
 
-    protected void eat() {
+    public void eat() {
+        System.out.println("Я ем");
     }
 
-    protected void sleep() {
+    public void sleep() {
+        System.out.println("Я сплю");
     }
 
-    protected void go() {
+    public void go() {
+        System.out.println("Я гуляю");
     }
 
     @Override

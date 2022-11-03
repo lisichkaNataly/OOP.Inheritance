@@ -19,26 +19,26 @@ public class Herbivores extends Mammals{
 
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("Я ем траву, листья, ветки, цветы и плоды");
     }
 
     @Override
-    protected void go() {
+    public void go() {
         System.out.println("Я гуляю там, где комфортно");
     }
 
     @Override
-    protected void sleep() {
+    public void sleep() {
         super.sleep();
     }
 
     @Override
-    protected void walk() {
+    public void walk() {
         super.walk();
     }
 
-    protected void graze() {
+    public void graze() {
         System.out.println("Я пасусь");
     }
 

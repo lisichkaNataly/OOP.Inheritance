@@ -20,16 +20,16 @@ public class Flightless extends  Birds{
 
 
     @Override
-    protected void go() {
+    public void go() {
         System.out.println("Я не летаю, потому что утратил способность летать в результате эволюции");
     }
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("Я кушаю");
     }
 
-    protected void walk () {
+    public void walk () {
         System.out.println("Я гуляю");
     }
 

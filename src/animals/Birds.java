@@ -18,17 +18,17 @@ public class Birds extends Animals{
     }
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("Я питаюсь всевозможными насекомыми и другими беспозвоночными," +
                 " семенами, плодами и зелеными частями растений, нектаром цветов, рыбой");
     }
 
     @Override
-    protected void go() {
+    public void go() {
         System.out.println("Я летаю");
     }
 
-    protected void hunting() {
+    public void hunting() {
         System.out.println("Я - птица, и я охочусь");
     }
 
